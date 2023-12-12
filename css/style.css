@@ -381,12 +381,7 @@ body {
       ),
       url(../images/Dark-bg-tablet.jpg);
     max-width: 768px;
-    height: auto;
-  }
-
-  .container-main {
-    padding-top: 112px;
-    padding-bottom: 112px;
+    height: 436px;
   }
 
   .main-title {
@@ -395,8 +390,9 @@ body {
     letter-spacing: 0.02em;
     max-width: 496px;
     margin-bottom: 36px;
+    padding-top: 112px;
   }
-}
+
 
 @media screen and (min-width: 1158px) {
   .container {
