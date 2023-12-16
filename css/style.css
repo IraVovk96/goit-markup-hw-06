@@ -51,6 +51,8 @@ body {
   max-width: 318px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 /*---------MOMILE HEADER STYLE----*/
 .menu {
@@ -216,7 +218,6 @@ body {
 
 .main-page {
   display: block;
-  height: 432px;
   background-color: #2e2f42;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -228,45 +229,340 @@ body {
   max-width: 320px;
   margin: 0 auto;
   background-position: center;
-
-  .main-title {
-    color: #fff;
-    text-align: center;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 288px;
-    padding-top: 72px;
-  }
-  .button {
-    display: block;
-    border: none;
-    cursor: pointer;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    background-color: #4d5ae5;
-    border-radius: 4px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    margin-right: auto;
-    margin-left: auto;
-    padding: 16px 32px;
-    margin-top: 72px;
-    min-width: 169px;
-    height: 56px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .button:hover,
-  .button:focus {
-    background-color: #404bbf;
-  }
+  padding-top: 72px;
+  padding-bottom: 72px;
 }
+
+.main-title {
+  color: #fff;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 169px;
+}
+.button {
+  display: block;
+  margin-top: 72px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  background-color: #4d5ae5;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  margin-right: auto;
+  margin-left: auto;
+  padding: 16px 32px;
+  min-width: 169px;
+  height: 56px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button:hover,
+.button:focus {
+  background-color: #404bbf;
+}
+/*------/MOBILE SECTION 1 STYLE------*/
+
+/*---------MOBILE BENEFITS STYLE------*/
+.icon-benefits {
+  display: none;
+}
+.benefits {
+  margin-top: 96px;
+  margin-bottom: 96px;
+}
+.benefits-container {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+
+.subtitle-benefits {
+  color: #2e2f42;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-bottom: 8px;
+}
+.text-benefits {
+  color: #434455;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+/*---------/MOBILE BENEFITS STYLE------*/
+
+/*------------MOBILE OUR TEAM STYLE----------*/
+.content {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  background-color: #f4f4fd;
+}
+.team-container {
+  width: 296px;
+}
+
+.team-images {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 72px;
+}
+.images {
+  border-radius: 0px 0px 4px 4px;
+  background: #fff;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+.content-title {
+  color: #2e2f42;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+  text-align: center;
+}
+.subtitle {
+  color: #2e2f42;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
+.text-benefits {
+  color: #434455;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+.group-sotial-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.sotial-link {
+  display: flex;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  fill: #f4f4fd;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.sotial-link:hover,
+.sotial-link:focus {
+  background-color: #404bbf;
+}
+.sotial-icons {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 32px;
+}
+
+/*------------/MOBILE OUR TEAM STYLE----------*/
+/*------------MOBILE PORTFOLIO STYLE----------*/
+.holder {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  background-color: #fff;
+}
+.headline {
+  color: #2e2f42;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+}
+.text-portfolio {
+  padding: 32px 16px;
+  border: 1px solid #f4f4fd;
+  background: #fff;
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+.subtitle {
+  color: #2e2f42;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.text-our-portfolio {
+  color: #434455;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.portfolio-pic {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-pic:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.picture-overlay {
+  position: relative;
+  overflow: hidden;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #f4f4fd;
+  background-color: #4d5ae5;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  padding: 40px 32px;
+  overflow: auto;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-pic:hover .overlay {
+  transform: translateY(0%);
+}
+/*------------/MOBILE PORTFOLIO STYLE----------*/
+/*------------MOBILE FOOTER STYLE--------------*/
+
+.footer-box {
+  background-color: #2e2f42;
+  padding: 96px 0;
+}
+.footer-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+  text-align: center;
+}
+.logo-block {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-logo {
+  color: #4d5ae5;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.accent {
+  color: #f4f4fd;
+}
+.slogan {
+  color: #f4f4fd;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.footer-media {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+.group-sotial-icons {
+  gap: 16px;
+}
+.ill {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.ill:hover,
+.ill:focus {
+  background-color: #31d0aa;
+}
+.form-input {
+  width: 288px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  opacity: 0.3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  background: #2e2f42;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.form-footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.button-form {
+  display: flex;
+  min-width: 165px;
+  height: 40px;
+  padding: 8px 24px;
+
+  gap: 16px;
+  border-radius: 4px;
+  background-color: #4d5ae5;
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+/*------------/MOBILE FOOTER STYLE--------------*/
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 766px;
@@ -381,7 +677,8 @@ body {
       ),
       url(../images/Dark-bg-tablet.jpg);
     max-width: 768px;
-    height: 436px;
+    padding-top: 112px;
+    padding-bottom: 112px;
   }
 
   .main-title {
@@ -390,10 +687,82 @@ body {
     letter-spacing: 0.02em;
     max-width: 496px;
     margin-bottom: 36px;
-    padding-top: 112px;
   }
 
+  /*---------/TABLET SECTION 1 STYLE------*/
 
+  /*---------TABLET BENEFITS STYLE------*/
+
+  .benefits-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+  .list-benefits {
+    width: calc((100% - 24px) / 2);
+  }
+  .subtitle-benefits {
+    text-align: start;
+  }
+
+  /*---------/TABLET BENEFITS STYLE------*/
+  /*------------TABLET OUR TEAM STYLE----------*/
+  .team-container {
+    width: 584px;
+  }
+  .team-images {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 64px 24px;
+  }
+  .images {
+    width: calc((100% - 24px) / 2);
+  }
+  .content-title {
+    margin-bottom: 68px;
+  }
+  /*------------/TABLET OUR TEAM STYLE----------*/
+  /*------------TABLET PORTFOLIO STYLE----------*/
+  .portfolio {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+  .portfolio-pic {
+    width: calc((100% - 24px) / 2);
+  }
+  /*------------/TABLET PORTFOLIO STYLE----------*/
+  /*------------TABLET FOOTER STYLE----------*/
+
+  .footer-icons {
+    width: 584px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .footer-logo {
+    text-align: left;
+  }
+  .slogan {
+    text-align: left;
+    width: 264px;
+  }
+  .footer-media {
+    text-align: left;
+  }
+  .group-sotial-icons {
+    padding-left: 0;
+    margin: 0;
+  }
+  .form-footer {
+    flex-direction: row;
+  }
+
+  .form-input {
+    width: 264px;
+  }
+
+  /*------------/TABLET FOOTER STYLE----------*/
+}
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
@@ -413,6 +782,7 @@ body {
     letter-spacing: 0.02em;
   }
   /*--------- /DESKTOP HEADER STYLE----*/
+
   /*---------DESKTOP SECTION 1 STYLE-------*/
   @media screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx),
@@ -426,10 +796,92 @@ body {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people.jpg);
+      url(../images/people-office.jpg);
     max-width: 1440px;
+    padding-top: 188px;
+    padding-bottom: 188px;
   }
   .main-title {
     margin-bottom: 48px;
   }
+  /*---------/DESTOP SECTION 1 STYLE------*/
+  /*---------DESCTOP BENEFITS STYLE------*/
+  .icon-benefits {
+    display: flex;
+  }
+  .benefits {
+    padding: 120px 0;
+  }
+  .benefits-container {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+  .subtitle {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
+  .text-benefits {
+    font-weight: 400;
+  }
+  .list-benefits {
+    width: calc((100% - 72px) / 4);
+    background-color: #fff;
+  }
+  .groupe-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 264px;
+    height: 112px;
+    border-radius: 4px;
+    border: 1px solid var(--LIGHT-SLATE, #8e8f99);
+    background: var(--CLOUD, #f4f4fd);
+    margin-bottom: 8px;
+    fill: #2e2f42;
+  }
+  /*---------/DESCTOP BENEFITS STYLE------*/
+  /*------------DESCTOP OUR TEAM STYLE----------*/
+  .team-container {
+    width: 1128px;
+  }
+  .content {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .team-images {
+    flex-wrap: nowrap;
+  }
+  .content-title {
+    margin-bottom: 70px;
+  }
+  /*------------/DESCTOP OUR TEAM STYLE----------*/
+  /*------------DESCTOP PORTFOLIO STYLE----------*/
+  .portfolio {
+    gap: 48px 24px;
+  }
+  .portfolio-pic {
+    width: calc((100% - 48px) / 3);
+  }
+  /*------------/DESCTOP PORTFOLIO STYLE----------*/
+  /*------------DESCTOP FOOTER STYLE----------*/
+  .footer-box {
+    margin: auto;
+    height: 312px;
+    padding: 100px 0;
+  }
+  .footer-icons {
+    width: 1128px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: baseline;
+  }
+  .logo-block {
+    margin-right: 120px;
+  }
+  .footer-icons-media {
+    margin-right: 80px;
+  }
+  /*------------/DESCTOP FOOTER STYLE----------*/
 }
